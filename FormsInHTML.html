@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body style="background-color: darkcyan;">
+    <h1 style="text-align: center;color: white ;">Forms</h1>
+    <!-- <form> tag is the main tag to create the table.-->
+    <form>
+        <div style="background-color: black; color: white;">
+        <fieldset>
+        <legend><h3>Registration Form.</h3></legend>
+        <label for="fname"><strong>First Name</strong>: <input type="text" required id="fname" 
+            placeholder="Enter your First Name" 
+            +></label> 
+        <br> <br>
+        <label for="lname"><strong>Last Name</strong>: <input type="text" required id="lname" placeholder="Enter your Last Name"> </label>
+        <br> <br>
+        <label for="dob"><strong>Date of Birth</strong>: <input type="date" required id="dob" placeholder="Select your Date of Birth "></label> <br> <br>
+        <label for="address"><strong>Enter your Address:</strong></label> <br><textarea style="border-color: yellow ; border: 5px;" name="Address" id="address" cols="150" rows="7"></textarea> <br> <br>
+        <label for="email"><strong>Email</strong>: <input type="email" required id="email" placeholder="Enter your Mail"></label>
+        <br> <br>
+        <label for="password"><strong>Password</strong>: <input type="password" id="password" required placeholder="Enter your password"></label> <br> <br>
+        <label for="password"><strong>Re-Enter your Password</strong>: <input type="password" required id="password" placeholder="Re-Enter your Password"></label> <br> <br> 
+        <Label for="technology"><b>Select the technology in which you are familiar :
+        </b></Label>  
+        <input list="technologies" name="technology" >
+        <datalist id="technologies">
+            <option value="Angular JS">
+            <option value="BootStrap 5">
+            <option value="CSS 3">
+            <option value="HTML 5">
+            <option value="React JS">
+            <option value="JavaScript">
+            <option value="Java">
+            <option value="Python">
+            <option value="Kotlin">
+            <option value="C">
+            <option value="C++">
+            <option value="PHP">
+            <option value="Django">
+            <option value="Flask">
+            <option value="Node JS">
+            <option value="Express JS">
+            <option value="Vue JS">
+            <option value="JSON & JQuery">
+        </datalist><br> <br>
+        <input type="submit" style="cursor: pointer;">
+        </fieldset>
+        <!-- "input type - datalist" included in HTML5 -->
+       
+        </div>
+    </form>
+</body>
+</html>
